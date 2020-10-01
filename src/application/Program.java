@@ -16,6 +16,15 @@ public class Program {
 			System.out.println("Tax payer #"+i+" data: ");
 			System.out.print("Individual or company (i/c)? ");
 			char ch=sc.next().charAt(0);
+			System.out.print("Name: ");
+			sc.nextLine();
+			String name=sc.nextLine();
+			System.out.print("Anual income: ");
+			double annualIncome=sc.nextDouble();
+			
+			if (ch=='i') {
+				System.out.print("Health expenditures: ");
+			}
 			
 		}
 
