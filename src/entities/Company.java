@@ -25,10 +25,10 @@ public class Company extends TaxPayer {
 	@Override
 	public Double taxCalc() {
 		if (employeesNumber > 10) {
-			return (getAnnualIncome() * (14/100*getAnnualIncome()));
+			return (0.14*getAnnualIncome());
 		}
 		else
-			return (getAnnualIncome() * (16/100*getAnnualIncome()));
+			return (0.16*getAnnualIncome());
 	}
 	
 
